@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import logoVideo from "../assets/video/logo.mp4";
+import logoVideo from "./assets/video/logo.mp4"; // adjust relative path
 import Home from "./pages/HomePage/Home";
 import Contact from "./pages/ContactPage/Contact";
 import AboutPage from "./pages/AboutPage/AboutPage";
