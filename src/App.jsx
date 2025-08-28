@@ -38,7 +38,7 @@ function App() {
             playsInline
             style={{ width: "100%", maxWidth: "300px", height: "auto" }} // ⬅️ limit video size
           >
-            <source src="/src/assets/video/logo.mp4" type="video/mp4" />
+            <source src="/video/logo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
