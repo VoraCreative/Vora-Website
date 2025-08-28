@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/HomePage/Home";
@@ -21,15 +21,15 @@ import "./App.css";
 import AdminAboutPage from "./pages/AdminPage/components/AdminAbout/AdminAboutPage";
 
 function App() {
-  const [showIntro, setShowIntro] = useState(true);
+
 
   return (
     <>
       {/* Intro video overlay */}
-      {showIntro && <IntroVideo onEnd={() => setShowIntro(false)} />}
+
 
       {/* Main app content */}
-      {!showIntro && (
+
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -38,7 +38,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/service" element={<ServicePage />} />
             <Route path="/voraAdmin" element={<AdminPage />} />
-            
+
             {/* Protected admin routes */}
             <Route
               path="/admin/gallery"
@@ -74,7 +74,7 @@ function App() {
             />
           </Routes>
         </BrowserRouter>
-      )}
+
     </>
   );
 }
