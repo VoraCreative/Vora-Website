@@ -8,7 +8,6 @@ const IntroVideo = ({ onEnd }) => {
         src={introVideo}
         autoPlay
         muted
-        playsInline
         onEnded={onEnd}
       />
     </div>
