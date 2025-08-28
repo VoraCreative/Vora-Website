@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/HomePage/Home";
@@ -21,15 +21,29 @@ import "./App.css";
 import AdminAboutPage from "./pages/AdminPage/components/AdminAbout/AdminAboutPage";
 
 function App() {
-  const [showIntro, setShowIntro] = useState(true);
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 6000); // 3-second loading screen
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-      {/* Intro video overlay */}
-      {showIntro && <IntroVideo onEnd={() => setShowIntro(false)} />}
+      {loading ? (
+        <div className="loading-container" style={{ textAlign: "center" }}>
+          <video
+            muted
+            autoPlay
+            loop
+            playsInline
+            style={{ width: "100%", maxWidth: "300px", height: "auto" }} // ⬅️ limit video size
+          >
+            <source src="/src/assets/video/logo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
 
-      {/* Main app content */}
-      {!showIntro && (
+        </div>
+      ) : (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />

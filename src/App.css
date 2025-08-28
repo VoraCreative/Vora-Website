@@ -13,6 +13,21 @@
 }
 body {
   background-color: #000 !important;
-  color: #fff;
 }
 
+/* App.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+  }
+
+  .loading-container .loading-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    font-family: Arial, sans-serif;
+  }
