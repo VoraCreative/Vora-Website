@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import logoVideo from "../assets/video/logo.mp4";
 import Home from "./pages/HomePage/Home";
 import Contact from "./pages/ContactPage/Contact";
 import AboutPage from "./pages/AboutPage/AboutPage";
@@ -38,7 +38,7 @@ function App() {
             playsInline
             style={{ width: "100%", maxWidth: "300px", height: "auto" }} // ⬅️ limit video size
           >
-            <source src="/video/logo.mp4" type="video/mp4" />
+            <source src={logoVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
