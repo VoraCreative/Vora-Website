@@ -54,7 +54,7 @@ ul, ol {
   box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.02);
   z-index: 999;
   transition: 0.4s;
-  background: rgba(0, 0, 0, 0.2); /* black with 60% opacity */
+  background: rgba(0, 0, 0, 0); /* black with 60% opacity */
   overflow: hidden;
 }
 
@@ -86,7 +86,7 @@ ul, ol {
     top: 0;
     overflow-y: auto;
     box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
-    background-color: #080808;
+    background-color: #0000;
     z-index: 9999;
     opacity: 0.95;
     transition: 0.3s;
@@ -145,7 +145,7 @@ ul, ol {
   top: 0;
   overflow-y: auto;
   box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
-  background-color: #080808;
+  background-color: #0000;
   z-index: 9999;
   opacity: 0;
   transition: 0.3s;
@@ -161,7 +161,7 @@ ul, ol {
   top: 0;
   overflow-y: auto;
   box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
-  background-color: #080808;
+  background-color: #0000;
   z-index: 9999;
   opacity: 0.6;
   transition: 0.3s;
