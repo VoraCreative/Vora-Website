@@ -54,7 +54,7 @@ ul, ol {
   box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.02);
   z-index: 999;
   transition: 0.4s;
-  background: #000000; 
+  background: rgba(0, 0, 0, 0.1); /* black with 60% opacity */
   overflow: hidden;
 }
 
@@ -107,7 +107,7 @@ ul, ol {
   font-size: 30px;
   text-align: center;
   color: #fff;
-  background: #000000;
+ background: rgba(0, 0, 0, 0.1); /* black with 60% opacity */
   cursor: pointer;
 }
 
@@ -281,20 +281,20 @@ ul, ol {
 }
 
 .copyright-text {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   color: #ffffff;
   padding-bottom: 10px;
 }
 
 .copyright-footer {
-  font-size: 12px;
+  font-size: 10px;
   color: #fff;
 }
 
 @media (max-width: 420px) {
   .copyright-text {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
 }
 
@@ -304,7 +304,7 @@ ul, ol {
 
 .copyright-text a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   color: (#283890,#27aae2,#fffefe);
 }
 
