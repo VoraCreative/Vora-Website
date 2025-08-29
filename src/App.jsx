@@ -30,18 +30,31 @@ function App() {
   return (
     <>
       {loading ? (
-        <div className="loading-container" style={{ textAlign: "center" }}>
+      <div
+          style={{
+            display: "flex",
+            justifyContent: "center", // center horizontally
+            alignItems: "center", // center vertically
+            minHeight: "100vh", // full screen height (works on mobile too)
+            background: "#000", // optional (black background like splash screen)
+            margin: 0,
+            padding: 0,
+          }}
+        >
           <video
             muted
             autoPlay
             loop
             playsInline
-            style={{ width: "100%", maxWidth: "300px", height: "auto" }} // ⬅️ limit video size
+            style={{
+              width: "100%",
+              maxWidth: window.innerWidth > 768 ? "800px" : "400px", // desktop vs mobile
+              height: "auto",
+            }}
           >
             <source src={logoVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-
         </div>
       ) : (
         <BrowserRouter>
