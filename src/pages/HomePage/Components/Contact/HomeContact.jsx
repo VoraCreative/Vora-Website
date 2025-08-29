@@ -78,8 +78,7 @@ const HomeContact = () => {
           <div className="contact-info">
             <h3>Contact Info</h3>
             <p>
-              <i className="ti-location-pin"></i> Building 33, Al Khaleej Street
-              Al Murar, Deira Dubai United Arab Emirates
+              <i className="ti-location-pin"></i> 25 1A St - Al Qusais - Al Qusais 1 - Dubai, United Arab Emirates
             </p>
             <p>
               <i className="ti-email"></i>voracreativeuae@gmail.com
